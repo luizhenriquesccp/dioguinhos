@@ -1,0 +1,14 @@
+body {
+    background-color: #f2d7f0;
+}
+section {
+    background-color: #f7f7f7;
+    margin: 50px auto;
+    width: 700px;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
