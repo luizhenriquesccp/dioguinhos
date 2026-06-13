@@ -108,4 +108,5 @@ div.cards {
     height: 50px;
     background-color: rgb(194, 29, 216);
     margin-top: auto;
+    border-radius: 0 0 4px 4px;
 }
