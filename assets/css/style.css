@@ -78,7 +78,6 @@ div.cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 40px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(240, 147, 251, 0.05) 100%);
 }
 
 .card {
@@ -97,19 +96,44 @@ div.cards {
     overflow: hidden;
 }
 
+.button-container {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
 .button {
-    width: 250px;
-    height: 50px;
-    background-color: rgb(56, 61, 63);
-    border-radius: 999px;
-    margin: auto;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #6e0cd1 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button.secondary {
+    background: linear-gradient(135deg, #fbc093 0%, #e91b37 100%);
 }
 
 .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
-    background: rgb(154, 150, 150);
+    box-shadow: 0 12px 30px rgba(11, 52, 234, 0.673);
+    background: rgb(22, 237, 44);
+}
+
+.button.secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(234, 11, 11, 0.673);
+    background: rgb(237, 22, 22);
 }
 
 .footer {
