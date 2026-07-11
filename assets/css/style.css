@@ -29,6 +29,11 @@ section {
     color: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav h2 {
+    animation: slideUp  1s ease-in-out;
 }
 
 .hero {
@@ -49,13 +54,36 @@ section {
     font-size: 36px;
     text-align: center;
     padding-top: 120px;
+    animation: slideUp 1s ease-in-out;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .content {
     display: flex;
     gap: 20px;
     padding: 40px;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(240, 147, 251, 0.05) 100%);
+    animation: fadeIn 1s ease-in-out;
 }
 
 .content div {
