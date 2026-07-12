@@ -1,55 +1,55 @@
 body {
-    background: linear-gradient(135deg, #103af4 0%, #e7e3eb 100%);
-/*     background: linear-gradient(135deg, #e7e3eb 0%, #103af4 100%);
- */    box-sizing: border-box;
+    background: linear-gradient(135deg, #030B1E 0%, #0F2042 100%);
+    box-sizing: border-box;
 }
+
 section {
-    background-color: #f7f7f7;
+    background-color: #FAFAFA; /* Um off-white mais elegante que o cinza padrão */
     margin: 50px auto;
-    width: 700px;
+    width: 900px;
     height: 1500px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     position: relative;
 }
+
 .v {
     width: 100%;
     height: 8px;
-    background: linear-gradient(90deg, #ffffff 0%, #57d3f537 50%, #57d3f5 100%);
+    background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #AA7C11 100%);
     border-radius: 4px 4px 0 0;
 }
 
 .nav {
-    background: linear-gradient(135deg, #ffffff 0%, #3508eb 50%);
+    background: linear-gradient(135deg, #0F2042 0%, #1B365D 100%);
     text-align: center;
-    color: #ffffff;
-    font-family: 'Great Vibes', cursive;
+    color: #F3E5AB; /* Texto em dourado claro para contrastar com o azul escuro */
+    font-family:Times, 'Times New Roman', serif;
     font-size: 25px;
     animation: fadeIn 1.7s ease-in-out;
+    padding: 15px 0;
 }
 
 h1 {
-    animation: slideUp  1s ease-in-out;
+    animation: slideUp 1s ease-in-out;
 }
 
 .hero {
-    background-color: rgb(24, 147, 208);
     width: 100%;
     height: 400px;
-    background: linear-gradient(135deg, rgba(82, 83, 85, 0.437) 0%, rgba(0, 0, 0, 0) 100%), url('../img/hero.jpeg');
+    background: linear-gradient(135deg, rgba(15, 32, 66, 0.7) 0%, rgba(3, 11, 30, 0.4) 100%), url('../img/hero.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-
 .hero h2 {
-    color: #ffffff;
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: Times, 'Times New Roman', serif;
     font-size: 36px;
     text-align: center;
     padding-top: 10px;
@@ -57,12 +57,8 @@ h1 {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideUp {
@@ -76,12 +72,11 @@ h1 {
     }
 }
 
-
 .content {
     display: flex;
     gap: 20px;
     padding: 40px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(240, 147, 251, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(27, 54, 93, 0.03) 0%, rgba(212, 175, 55, 0.03) 100%);
     animation: slideUp 3s ease-in-out;
 }
 
@@ -90,20 +85,19 @@ h1 {
     padding: 25px;
     background: #ffffff;
     border-radius: 12px;
-    border-left: 4px solid #667eea;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+    border-left: 4px solid #D4AF37; /* Borda dourada clássica */
+    box-shadow: 0 4px 15px rgba(15, 32, 66, 0.08);
     transition: all 0.3s ease;
-    font-family: 'Pinyon Script', 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .content div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+    box-shadow: 0 8px 25px rgba(214, 175, 55, 0.2);
 }
 
-
 .content div p {
-    color: #333333;
+    color: #222222;
     font-size: 20px;
     line-height: 1.8;
     font-weight: 300;
@@ -128,7 +122,7 @@ div.cards {
     font-size: 24px;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 1; 
     overflow: hidden;
@@ -141,7 +135,7 @@ div.cards {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.15);
     z-index: 0;
     transition: left 0.3s ease;
 }
@@ -152,16 +146,17 @@ div.cards {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(214, 175, 55, 0.25);
 }
 
 .pedido {
-    background: linear-gradient(135deg, #0c3ad1 0%, #667eea4b 100%);
-    color: #ffffff; 
+    background: linear-gradient(135deg, #1B365D 0%, #0F2042 100%);
+    color: #F3E5AB; 
     grid-column: 1 / -1;
     text-align: center;
     padding: 20px 0;
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
 }
 
 .button-container {
@@ -172,50 +167,55 @@ div.cards {
     padding: 20px 0;
 }
 
-
-.button {
+.button, 
+.button.secondary {
     padding: 16px 40px;
-    background: linear-gradient(135deg, #667eea 0%, #300cd1 100%);
-    color: #ffffff;
+    color: #ffffff; 
     border: none;
     border-radius: 50px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.45s ease;
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.button.secondary {
-    background: linear-gradient(135deg, #fbc093 0%, #e91b37 100%);
+.button {
+    background: linear-gradient(135deg, #1e5c33 0%, #2e8b57 100%);
 }
 
 .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px  rgb(22, 237, 44);
-    background:  rgb(22, 237, 44);
+    background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);
+    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
 }
 
-.button:active,
-.button:focus-visible {
-    background: rgb(0, 225, 255);
-    box-shadow: 0 12px 30px rgba(0, 255, 221, 0.5);
-    outline: none;
+.button.secondary {
+    background: linear-gradient(135deg, #7a1d1d 0%, #b22222 100%);
 }
-
 
 .button.secondary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(234, 11, 11, 0.673);
-    background: rgb(237, 22, 22);
+    background: linear-gradient(135deg, #b22222 0%, #cd5c5c 100%);
+    box-shadow: 0 8px 25px rgba(178, 34, 34, 0.4);
+}
+
+.button:active,
+.button:focus-visible,
+.button.secondary:active,
+.button.secondary:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
 }
 
 .footer {
     width: 100%;
     height: 20px;
-    background: linear-gradient(90deg, #ffffff 0%, #57d3f537 50%, #57d3f5 100%);
+    background: linear-gradient(90deg, #AA7C11 0%, #D4AF37 50%, #1B365D 100%);
     margin-top: auto;
     border-radius: 0 0 4px 4px;
 }
