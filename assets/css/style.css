@@ -116,8 +116,8 @@ div.cards {
 }
 
 .card {
-    min-height: 180px;
-    min-width: 220px;
+    min-height: 190px;
+    min-width: 190px;
     background: url('../img/INFO2023.png') center/contain no-repeat;
     border-radius: 16px;
     display: flex;
@@ -174,7 +174,7 @@ div.cards {
 
 .button {
     padding: 16px 40px;
-    background: linear-gradient(135deg, #667eea 0%, #6e0cd1 100%);
+    background: linear-gradient(135deg, #667eea 0%, #300cd1 100%);
     color: #ffffff;
     border: none;
     border-radius: 50px;
