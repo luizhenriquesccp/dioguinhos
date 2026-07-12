@@ -109,14 +109,16 @@ h1 {
 }
 
 div.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .card {
     min-height: 180px;
+    min-width: 220px;
+    background: url('../img/INFO2023.png') center/contain no-repeat;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -128,6 +130,7 @@ div.cards {
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     position: relative;
+    z-index: 1; 
     overflow: hidden;
 }
 
@@ -138,7 +141,8 @@ div.cards {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    z-index: 0;
     transition: left 0.3s ease;
 }
 
@@ -177,7 +181,7 @@ div.cards {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.45s ease;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -189,9 +193,17 @@ div.cards {
 
 .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(11, 52, 234, 0.673);
-    background: rgb(22, 237, 44);
+    box-shadow: 0 12px 30px  rgb(22, 237, 44);
+    background:  rgb(22, 237, 44);
 }
+
+.button:active,
+.button:focus-visible {
+    background: rgb(0, 225, 255);
+    box-shadow: 0 12px 30px rgba(0, 255, 221, 0.5);
+    outline: none;
+}
+
 
 .button.secondary:hover {
     transform: translateY(-3px);
