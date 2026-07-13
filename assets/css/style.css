@@ -231,7 +231,7 @@ div.cards {
 
     width: 500px;
 
-    background: white;
+    background: linear-gradient(90deg, #AA7C11 0%, #D4AF37 100%);
 
     border-radius: 15px;
 
