@@ -1,45 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Info23.1</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/file.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="popup" class="popup">
-    <h2>💙 Muito obrigado!</h2>
-    <p>Obrigado por aceitar ser nosso <strong>paraninfo</strong> Diogo.</p>
+      <h2>💙 Muito obrigado!</h2>
+      <p>Obrigado Diogo, por aceitar ser nosso <strong>PARANINFO</strong>.</p>
 
-    <img src="" alt="gifs">
+      <img src="assets/img/uma-musume-meep.gif" alt="gifs" />
 
-    <br><br>
-
+      <br /><br />
     </div>
     <section>
-        <div class ="v"></div>
-        <div class="nav">
-            <h1>Conexão detectada...</h1>
+      <div class="v"></div>
+      <div class="nav">
+        <h1>Conexão detectada...</h1>
+      </div>
+      <div class="hero">
+        <h2>Um grupo de alunos iniciou uma transmissão importante.</h2>
+      </div>
+      <div class="content">
+        <div>
+          <p>
+            Durante todos esses anos, o senhor nos ajudou a criar conexões que
+            vão muito além dos cabos, protocolos e roteadores. Conectou
+            conhecimento, oportunidades e confiança.
+          </p>
         </div>
-        <div class="hero">
-            <h2>Um grupo de alunos iniciou uma transmissão importante.</h2>
+        <div>
+          <p>
+            Agora gostaríamos de estabelecer a conexão mais importante desta
+            jornada.
+          </p>
         </div>
-        <div class="content">
-            <div><p>Durante todos esses anos, o senhor nos ajudou a criar conexões que vão muito além dos cabos, protocolos e roteadores. Conectou conhecimento, oportunidades e confiança.</p></div>
-            <div><p>Agora gostaríamos de estabelecer a conexão mais importante desta jornada.</p></div>
+      </div>
+      <div class="cards">
+        <div class="card"></div>
+      </div>
+      <div class="pedido">
+        <h2>Professor, aceita ser o nosso Paraninfo?</h2>
+      </div>
+      <div class="button-container">
+        <div
+          class="button"
+          onclick="
+            abrirPopup();
+            confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } });
+          "
+        >
+          Aceitar Convite
         </div>
-        <div class="cards">
-            <div class="card"></div>
+        <div class="button secondary" onclick="numVaiNao()">
+          Recusar Convite
         </div>
-        <div class="pedido"><h2>Professor, aceita ser o nosso Paraninfo?</h2></div>
-            <div class="button-container">
-                <div class="button" onclick="abrirPopup(); confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } })">Aceitar Convite</div>
-                <div class="button secondary" onclick="numVaiNao()">Recusar Convite</div>
-            </div>
+      </div>
 
-        <div class="footer"></div>
+      <div class="footer"></div>
     </section>
-</body>
+  </body>
 </html>
