@@ -10,3 +10,7 @@ function numVaiNao() {
     button.style.left = x;
     button.style.top = y;
 }
+
+function abrirPopup() {
+    document.getElementById("popup").style.display = "block";
+}

@@ -9,6 +9,15 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    <div id="popup" class="popup">
+    <h2>💙 Muito obrigado!</h2>
+    <p>Obrigado por aceitar ser nosso padrinho de formatura.</p>
+
+    <img src="" alt="Confete">
+
+    <br><br>
+
+    </div>
     <section>
         <div class ="v"></div>
         <div class="nav">
@@ -26,7 +35,7 @@
         </div>
         <div class="pedido"><h2>Professor, aceita ser o nosso Paraninfo?</h2></div>
             <div class="button-container">
-                <div class="button" onclick="confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } })">Aceitar Convite</div>
+                <div class="button" onclick="abrirPopup(); confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } })">Aceitar Convite</div>
                 <div class="button secondary" onclick="numVaiNao()">Recusar Convite</div>
             </div>
 
