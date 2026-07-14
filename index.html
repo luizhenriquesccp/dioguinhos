@@ -1,70 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Info23.1</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO 2023.1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/file.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-  </head>
-  <body>
+</head>
+<body>
+
     <div id="popup" class="popup">
-      <h2>💙 Muito obrigado!</h2>
-      <p>Obrigado Diogo, por aceitar ser nosso <strong>PARANINFO</strong>.</p>
-
-      <img src="assets/img/uma-musume-meep.gif" alt="gifs" />
-      <img src="assets/img/Dance Cat GIF by Respective.gif" alt="gifs" />
-      <img src="assets/img/Dance Cat GIF.gif" alt="gifs" />
-      <img src="assets/img/Happy Dance GIF.gif" alt="gifs" />
-
-      <br /><br />
+        <h2>EBAAAA</h2>
+        <p>Obrigado por aceitar ser nosso <strong>padrinho</strong>, prof. Diogo.</p>
+        <img src="assets/img/gatinhosDanca.gif" alt="gifs">
+        <br><br>
     </div>
-    <section>
-      <div class="v"></div>
-      <div class="nav">
-        <h1>Conexão detectada...</h1>
-      </div>
-      <div class="hero">
-        <h2>Um grupo de alunos iniciou uma transmissão importante.</h2>
-      </div>
-      <div class="content">
-        <div>
-          <p>
-            Durante todos esses anos, o senhor nos ajudou a criar conexões que
-            vão muito além dos cabos, protocolos e roteadores. Conectou
-            conhecimento, oportunidades e confiança.
-          </p>
-        </div>
-        <div>
-          <p>
-            Agora gostaríamos de estabelecer a conexão mais importante desta
-            jornada.
-          </p>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card"></div>
-      </div>
-      <div class="pedido">
-        <h2>Professor, aceita ser o nosso Paraninfo?</h2>
-      </div>
-      <div class="button-container">
-        <div
-          class="button"
-          onclick="
-            abrirPopup();
-            confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } });
-          "
-        >
-          Aceitar Convite
-        </div>
-        <div class="button secondary" onclick="numVaiNao()">
-          Recusar Convite
-        </div>
-      </div>
 
-      <div class="footer"></div>
+    <section>
+        <div class="v"></div>
+        
+        <div class="nav">
+            <h1 class="nav-title">Seja muito bem vindo!</h1>
+        
+            <a href="#hero" class="computer-link" title="Clique aqui">
+                <div class="computer-wrapper">
+                    <div id="computer"></div>
+                </div>
+            </a>
+            <h4><u>Clique</u> no computador</h4>
+        </div>
+        
+        <div id="hero" class="hero">
+        </div>
+        
+        <div class="content" id="convite">
+            <div class="terminal">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <p class="line1">C:\Users\INFO4V> ping diogo-cortez.ifrn.edu.br<span class="cursor1">_</span></p>
+                    <p class="line2">Pinging diogo-cortez.ifrn.edu [192.168.0.1] with 32 bytes of data:<span class="cursor2">_</span></p>
+                    <p class="line3">Reply from 192.168.0.1: bytes=32 time 1ms TTL=128 <br> 
+                        Reply from 192.168.0.1: bytes=32 time <1ms TTL=128 <br>
+                        Reply from 192.168.0.1: bytes=32 time <1ms TTL=128 <br>
+                        Reply from 192.168.0.1: bytes=32 time <1ms TTL=128 <br> <span class="cursor3">_</span></p>
+                    <p class="line4">Ping statistics:<br> Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)<br>
+                    
+                    Status: Professor encontrado.<span class="cursor4">_</span></p><br>
+                  </div>
+            </div>
+            <div class="texto">
+                <p>Durante todos esses anos, o senhor nos ajudou a criar conexões que vão muito além dos cabos, protocolos e roteadores.
+                    <br> Conectou <strong>conhecimento</strong>, <strong>oportunidade</strong> e <strong>confiança.</strong><br>
+                    Ao longo desse tempo, construímos lembranças, superamos desafios e compartilhamos momentos que certamente levaremos para a vida.<br>
+                    Entre aulas, projetos, explicações e muitas conexões, o senhor deixou uma marca importante na nossa turma.<br>
+                    Agora, que <strong>estamos encerrando esse ciclo tão especial</strong>, gostaríamos de fazer um <strong>convite</strong> que representa toda a nossa gratidão e o carinho que temos pelo senhor.
+                </p>
+            </div>
+        </div>
+        
+        <!-- <div class="cards">
+            <div class="card"></div>
+        </div>
+         -->
+        <div class="pedido">
+            <h2>Professor, aceita ser o nosso padrinho?</h2>
+        </div>
+        
+        <div class="button-container">
+            <div class="button" onclick="abrirPopup(); confetti({ particleCount: 180, spread: 120, origin: { y: 0.7 } })">Aceitar Convite</div>
+            <div class="button secondary" onclick="numVaiNao()">Recusar Convite</div>
+        </div>
+
+        <div class="footer"></div>
     </section>
-  </body>
+
+</body>
 </html>
